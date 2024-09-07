@@ -42,6 +42,13 @@ install node demone to listen to any changes in our file and rerun it
 and import it somewhere in the global place of your app (for example in app.ts): ` import "reflect-metadata" `
 # yarn add @types/node --save-dev
 install database driver. for postgresql below
-# npm install pg --save
+# yarn add pg --save
+
+create a database in postgresql - you can use pgadmin default user is `postgres`
+
+after that create a data source connection in a file `data-source.json` and link your database entities etc in this data source
+
+create an entity
 
 
+in your index file initialize the data source and add data to that datasource
