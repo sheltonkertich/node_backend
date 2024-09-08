@@ -1,20 +1,20 @@
 import "reflect-metadata";
-import { AppDataSource } from "./data-source";
+import { AppDataSource } from "./datasource.config";
 import { Post } from "./entities/Post";
 
 AppDataSource.initialize()
     .then(async () => {
         console.log("Data Source has been initialized!");
 
-        // Create a new user
+        // Create a new post
         const post = new Post();
-        post.title = "my first post";     
+        post.titlee = "my first post";      
 
-        // Save the user in the database
+        // Save the post in the database
         await AppDataSource.manager.save(post);
         console.log("User has been saved: ", post);
 
-        // Load users from the database
+        // Load posts from the database
         const users = await AppDataSource.manager.find(Post);
         console.log("Loaded users: ", users);
     })
