@@ -22,8 +22,6 @@ export class Post {
     length: 150,
     unique: false,
   })
-  titlee: string;
+  title: string;
 
-  @Column()
-  description: number;
 }

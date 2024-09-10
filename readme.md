@@ -52,3 +52,6 @@ create an entity
 
 
 in your index file initialize the data source and add data to that datasource
+
+*-------------------installing express---------******
+# yarn add express typescript ts-node @types/node @types/express --save-dev
